@@ -12,7 +12,7 @@ namespace TemperatureConverter.src
         {
             string [] str = temp.Split(" ");
             var value = Convert.ToDouble (str[0]);
-            var unit = str[1];
+            var unit = str[1]?.ToUpper();
             var convertValue = "";
 
             switch (unit)

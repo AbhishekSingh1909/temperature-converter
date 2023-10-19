@@ -11,16 +11,16 @@ do
     var pattern = @"^-?\.?\d+\.?\d*\s[CF]$";
     Console.WriteLine("Please enter a temperature value and its unit of measurement (F or C):");
     input = Console.ReadLine();
-    if (input == "exit")
+    if (input?.ToLower() == "exit")
     {
         break;
     }
     
-    var match = Regex.IsMatch(input??"", pattern);
+    var match = Regex.IsMatch(input??"", pattern,RegexOptions.IgnoreCase);
     if (match)
     {
         var result = ConvertTemprature.TempConvert(input ?? "");
-        Console.WriteLine($"{input} = {result}");
+        Console.WriteLine($"{input?.ToUpper()} = {result}");
     }
     else {
         Console.Write("Invalid input. ");
