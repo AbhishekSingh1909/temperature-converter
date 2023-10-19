@@ -17,7 +17,7 @@ You are tasked to develop a temperature converter program in C#. The program wil
 
 Your program does not need to look exactly like the example below, but should have similar features
 
-````
+```
 Please enter a temperature value and its unit of measurement (F or C):
 45 F
 45 F = 7.22 C
@@ -33,6 +33,8 @@ Invalid input. Please enter a valid temperature value and its unit of measuremen
 Please enter a temperature value and its unit of measurement (F or C):
 exit
 Program terminated.
-````
+```
 
 ## Screenshots of your output
+
+![Alt text](<Screenshot 2023-10-19 160803-1.png>)
